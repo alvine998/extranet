@@ -48,8 +48,8 @@ const ResetPass = () => {
 				<img alt="" src={logo} className={classes.image} />
 				<img alt="Mail" src={mail} className={classes.imageMail} />
 				<div className={classes.paper}>
-					<h4 style={{ fontWeight: 'bold', color: '#299BD7' }}>Silahkan Reset Passwordnya</h4>
-					<form action="/verification-email" className={classes.form} noValidate>
+					<h4 style={{ fontWeight: 'bold', color: '#299BD7' }}>Silahkan Ubah Passwordnya</h4>
+					<form action="/" className={classes.form} noValidate>
 						<TextField
 							autoComplete="pass"
 							name="pass"

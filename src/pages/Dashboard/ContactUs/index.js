@@ -18,11 +18,12 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems, logoutListItems } from '../../../../components/ListItems';
-import Yearends from '../../../../components/Reports/Yearends';
-import Notification from '../../../../components/Notification';
+import { mainListItems, secondaryListItems, logoutListItems } from '../../../components/ListItems';
+import Accounts from "../../../components/Accounts";
+import Notification from '../../../components/Notification';
+import Contact from '../../../components/Contact';
 
-const YearEnd = () => {
+const ContactUs = () => {
 	function Copyright() {
 		return (
 			<Typography variant="body2" color="textSecondary" align="center">
@@ -129,7 +130,7 @@ const YearEnd = () => {
 	return (
         <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="absolute" style={{backgroundColor:'#299BD7'}} className={clsx(classes.appBar, open && classes.appBarShift)}>
+      <AppBar style={{backgroundColor:'#299BD7'}} position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
         <Toolbar className={classes.toolbar}>
           <IconButton
             edge="start"
@@ -141,7 +142,7 @@ const YearEnd = () => {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Laporan Tahunan
+            Hubungi Kami
           </Typography>
           <Notification/>
         </Toolbar>
@@ -168,7 +169,7 @@ const YearEnd = () => {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <Yearends/>
+          <Contact/>
           <Box pt={4}>
             <Copyright />
           </Box>
@@ -178,4 +179,4 @@ const YearEnd = () => {
     );
 };
 
-export default YearEnd;
+export default ContactUs;

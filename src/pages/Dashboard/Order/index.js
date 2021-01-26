@@ -23,6 +23,7 @@ import Chart from '../../../components/Chart';
 import Deposits from '../../../components/Deposits';
 import Orders from '../../../components/Orders';
 import Home from '../../../components/Home';
+import Notification from '../../../components/Notification';
 
 const Order = () => {
 	function Copyright() {
@@ -143,13 +144,9 @@ const Order = () => {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Orders
+            Data Pemesanan
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <Notification/>
         </Toolbar>
       </AppBar>
       <Drawer

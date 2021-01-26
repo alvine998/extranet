@@ -20,6 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems, logoutListItems } from '../../../components/ListItems';
 import Accounts from "../../../components/Accounts";
+import Notification from '../../../components/Notification';
 
 const Account = () => {
 	function Copyright() {
@@ -140,13 +141,9 @@ const Account = () => {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Account
+            Akun Manajer
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <Notification/>
         </Toolbar>
       </AppBar>
       <Drawer

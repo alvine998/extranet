@@ -20,6 +20,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems, logoutListItems } from '../../../components/ListItems';
 import Reports from '../../../components/Reports';
+import Notification from '../../../components/Notification';
 
 const Report = () => {
 	function Copyright() {
@@ -142,11 +143,7 @@ const Report = () => {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Reports
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <Notification/>
         </Toolbar>
       </AppBar>
       <Drawer

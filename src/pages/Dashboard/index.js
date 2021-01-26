@@ -22,6 +22,7 @@ import { mainListItems, secondaryListItems, logoutListItems } from '../../compon
 import Chart from '../../components/Chart';
 import Deposits from '../../components/Deposits';
 import Orders from '../../components/Orders';
+import Notification from '../../components/Notification';
 
 const Dashboard = () => {
 	function Copyright() {
@@ -144,11 +145,7 @@ const Dashboard = () => {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
+          <Notification/>
         </Toolbar>
       </AppBar>
       <Drawer

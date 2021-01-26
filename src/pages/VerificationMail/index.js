@@ -52,7 +52,7 @@ const VerificationMail = () => {
 					<h4 style={{ fontWeight: 'bold', color: '#299BD7', textAlign: 'center' }}>
 						Silahkan Cek Email Kamu Untuk Verifikasi
 					</h4>
-					<form className={classes.form} noValidate>
+					<form action="/reset-password" className={classes.form} noValidate>
 						<Timer />
 						<Button type="submit" fullWidth variant="contained" color="primary" className={classes.submit}>
 							Kirim Ulang

@@ -90,7 +90,7 @@ const VerificationOTP = () => {
 						<Typography component="h1" variant="h5">
 							Dengan Nomor Ponsel
 						</Typography>
-						<form action="/dashboard" className={classes.form} noValidate>
+						<form action="/reset-password" className={classes.form} noValidate>
 							{/* <Autocomplete
 								id="combo-box-demo"
                                 options={codeNation}

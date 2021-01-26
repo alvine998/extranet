@@ -15,6 +15,7 @@ import ForgetPass from './pages/ForgetPass';
 import VerificationMail from './pages/VerificationMail';
 import VerificationOTP from './pages/VerificationOTP';
 import ResetPass from './pages/ResetPass';
+import ContactUs from './pages/Dashboard/ContactUs';
 
 
 // import { Provider } from "react-redux";
@@ -39,6 +40,7 @@ function App() {
           <Route path="/verification-email" exact component={VerificationMail}/>
           <Route path="/verification-phone" exact component={VerificationOTP}/>
           <Route path="/reset-password" exact component={ResetPass}/>
+          <Route path="/dashboard/contact-us" exact component={ContactUs}/>
           <Route component={NotFound}/>
         </Switch>
       </BrowserRouter>

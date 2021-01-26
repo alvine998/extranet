@@ -12,6 +12,8 @@ import AssignmentIcon from '@material-ui/icons/Assignment';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Link } from 'react-router-dom';
+import { Divider } from '@material-ui/core';
+import PhoneIcon from '@material-ui/icons/Phone';
 
 export const mainListItems = (
     <div>
@@ -21,23 +23,25 @@ export const mainListItems = (
         </ListItemIcon>
         <ListItemText primary="Dashboard" />
       </ListItem>
+      <Divider/>
+      <ListSubheader inset>Data</ListSubheader>
       <ListItem button component={Link} to="/dashboard/order">
         <ListItemIcon>
           <ShoppingCartIcon />
         </ListItemIcon>
-        <ListItemText primary="Orders" />
+        <ListItemText primary="Pemesanan" />
       </ListItem>
       <ListItem button component={Link} to="/dashboard/customer">
         <ListItemIcon>
           <PeopleIcon />
         </ListItemIcon>
-        <ListItemText primary="Customers" />
+        <ListItemText primary="Properti" />
       </ListItem>
       <ListItem button component={Link} to="/dashboard/report">
         <ListItemIcon>
           <BarChartIcon />
         </ListItemIcon>
-        <ListItemText primary="Reports" />
+        <ListItemText primary="Laporan" />
       </ListItem>
     </div>
   );
@@ -49,37 +53,43 @@ export const mainListItems = (
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Current month" />
+        <ListItemText primary="Laporan Bulanan" />
       </ListItem>
       <ListItem button component={Link} to="/dashboard/report/last-quarter">
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Last quarter" />
+        <ListItemText primary="Laporan per Quarter" />
       </ListItem>
       <ListItem button component={Link} to="/dashboard/report/year-end">
         <ListItemIcon>
           <AssignmentIcon />
         </ListItemIcon>
-        <ListItemText primary="Year-end sale" />
+        <ListItemText primary="Laporan Tahunan" />
       </ListItem>
     </div>
   );
 
   export const logoutListItems = (
     <div>
-      <ListSubheader inset>Setting</ListSubheader>
+      <ListSubheader inset>Pengaturan</ListSubheader>
       <ListItem button component={Link} to="/dashboard/account">
         <ListItemIcon>
           <AccountCircleIcon/>
         </ListItemIcon>
-        <ListItemText primary="Account" />
+        <ListItemText primary="Akun Manajer" />
+      </ListItem>
+      <ListItem button component={Link} to="/dashboard/contact-us">
+        <ListItemIcon>
+          <PhoneIcon/>
+        </ListItemIcon>
+        <ListItemText primary="Hubungi Kami" />
       </ListItem>
       <ListItem button component={Link} to="/">
         <ListItemIcon>
           <PowerSettingsNewIcon/>
         </ListItemIcon>
-        <ListItemText primary="Logout" />
+        <ListItemText primary="Keluar" />
       </ListItem>
     </div>
   )
