@@ -14,7 +14,6 @@ import Typography from '@material-ui/core/Typography';
 import Eyeslash from '@material-ui/icons/VisibilityOff';
 import Eyeopen from '@material-ui/icons/Visibility';
 import { makeStyles } from '@material-ui/core/styles';
-import { InputAdornment } from '@material-ui/core';
 
 const Login = () => {
 

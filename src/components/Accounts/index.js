@@ -117,7 +117,7 @@ const Accounts = () => {
 							type="file"
 						/>
 						<label htmlFor="contained-button-file">
-							<Button variant="contained" onChange={handleChange3} color="primary" component="span">
+							<Button variant="contained" onChange={handleChange3} color="primary" style={{backgroundColor:'#299BD7'}} component="span">
 								Upload Foto
 							</Button>
 						</label>
