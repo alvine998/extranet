@@ -1,8 +1,24 @@
 import React, { Component } from 'react';
-import { Button, Container, FormControl, IconButton, InputLabel, MenuItem, Select, TextField } from '@material-ui/core';
+import {
+	Button,
+	Container,
+	FormControl,
+	IconButton,
+	InputAdornment,
+	InputLabel,
+	MenuItem,
+	OutlinedInput,
+	Select,
+	TextField
+} from '@material-ui/core';
 import { Modal } from 'react-bootstrap';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
+import CheckboxesGroup from './Facility';
+import TipeKamar from './TipeKamar';
+import TipeKasur from './TipeKasur';
+import SwitchStatus from './Status';
+import HargaKamar from './Harga';
 
 class Customers extends Component {
 	constructor(props) {
@@ -12,7 +28,7 @@ class Customers extends Component {
 			edit: false,
 			value: '',
 			numb: null,
-			bed:''
+			bed: ''
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleChange2 = this.handleChange2.bind(this);
@@ -28,7 +44,7 @@ class Customers extends Component {
 	}
 
 	handleNumber(event) {
-		this.setState({ numb: event.target.numb});
+		this.setState({ numb: event.target.numb });
 	}
 
 	// handleDecrease(){
@@ -75,8 +91,8 @@ class Customers extends Component {
 									variant="outlined"
 									autoFocus
 								/>
-								<FormControl variant="outlined" style={{ marginTop: 10, minWidth: 300 }}>
-									<InputLabel id="comboBox">Tipe Kamar</InputLabel>
+								<FormControl variant="outlined">
+									{/* <InputLabel id="comboBox">Tipe Kamar</InputLabel>
 									<Select
 										labelId="comboBox"
 										id="Idcombo"
@@ -91,30 +107,33 @@ class Customers extends Component {
 										<MenuItem value={'superior'}>Superior</MenuItem>
 										<MenuItem value={'deluxe'}>Deluxe</MenuItem>
 										<MenuItem value={'vip'}>VIP</MenuItem>
-									</Select>
+									</Select> */}
+
+									<TipeKamar />
 								</FormControl>
 
-								<FormControl variant="outlined" style={{ marginTop: 10, minWidth: 350, marginLeft:20 }}>
+								<FormControl
+									variant="outlined"
+									style={{ marginTop: 10, minWidth: 350, marginLeft: 20 }}
+								>
 									<TextField
 										id="outlined-basic"
 										label="Maksimal Tamu"
 										fullWidth
 										type="number"
 										variant="outlined"
-										autoFocus
 										value={this.state.numb}
 										onChange={this.handleNumber}
 										// onClick={this.handleDecrease}
-										
 									/>
 								</FormControl>
 
-								<FormControl variant="outlined" style={{ marginTop: 10, minWidth: 300 }}>
-									<InputLabel id="comboBox2">Tipe Kasur</InputLabel>
+								<FormControl variant="outlined">
+									{/* <InputLabel id="comboBox2">Tipe Kasur</InputLabel>
 									<Select
 										labelId="comboBox2"
 										id="Idcombo"
-										value={this.state.bed}
+										value={this.state.value}
 										onChange={this.handleChange2}
 										label="Tipe"
 										fullWidth
@@ -125,7 +144,30 @@ class Customers extends Component {
 										<MenuItem  value={'single'}>Single Bed</MenuItem>
 										<MenuItem value={'twin'}>Twin Bed</MenuItem>
 										<MenuItem value={'double'}>Double Bed</MenuItem>
-									</Select>
+									</Select> */}
+									<TipeKasur />
+								</FormControl>
+
+								<FormControl
+									variant="outlined"
+									style={{ marginTop: 10, minWidth: 350, marginLeft: 20 }}
+								>
+									<TextField
+										id="outlined-basic"
+										label="Jumlah Kamar"
+										fullWidth
+										type="number"
+										variant="outlined"
+										value={this.state.numb}
+										onChange={this.handleNumber}
+										// onClick={this.handleDecrease}
+									/>
+								</FormControl>
+
+								<FormControl variant="outlined" style={{ flexDirection: 'row' }}>
+									<CheckboxesGroup />
+									<SwitchStatus />
+									<HargaKamar/>
 								</FormControl>
 							</form>
 						</Container>
@@ -209,7 +251,7 @@ class Customers extends Component {
 							<td>5</td>
 							<td>Wifi, Breakfast, TV</td>
 							<td>Aktif</td>
-							<td>Ya</td>
+							<td>Tersedia</td>
 							<td>Rp 250,000</td>
 						</tr>
 						<tr>
@@ -240,7 +282,7 @@ class Customers extends Component {
 							<td>5</td>
 							<td>Wifi, Breakfast, TV</td>
 							<td>Aktif</td>
-							<td>Ya</td>
+							<td>Tersedia</td>
 							<td>Rp 350,000</td>
 						</tr>
 						<tr>
@@ -271,7 +313,7 @@ class Customers extends Component {
 							<td>1</td>
 							<td>Wifi, Breakfast, Freezer, TV</td>
 							<td>Aktif</td>
-							<td>Tidak</td>
+							<td>Tidak Tersedia</td>
 							<td>Rp 850,000</td>
 						</tr>
 					</tbody>
