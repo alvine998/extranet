@@ -7,61 +7,50 @@ export default class Home extends Component {
 				<table class="table">
 					<thead class="thead-dark">
 						<tr>
-							<th scope="col">#</th>
-							<th scope="col">First</th>
-							<th scope="col">Last</th>
-							<th scope="col">Handle</th>
+							<th scope="col">No</th>
+							<th scope="col">Kode Pembayaran</th>
+							<th scope="col">Tanggal Pembayaran</th>
+							<th scope="col">Nama Pelanggan</th>
+							<th scope="col">Jenis Pembayaran</th>
+							<th scope="col">Kode Kamar</th>
+							<th scope="col">Permintaan Khusus</th>
+							<th scope="col">Tanggal Check-in</th>
+							<th scope="col">Total Harga</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th scope="row">1</th>
-							<td>Mark</td>
+							<td>PlK1023541</td>
+							<td>19/01/2021</td>
 							<td>Otto</td>
-							<td>@mdo</td>
+							<td>Tranasfer BCA</td>
+							<td>K001</td>
+							<td>Extra Bed</td>
+							<td>21/01/2021</td>
+							<td>Rp 300,000</td>
 						</tr>
 						<tr>
 							<th scope="row">2</th>
-							<td>Jacob</td>
+							<td>PlK1023542</td>
+							<td>15/01/2021</td>
 							<td>Thornton</td>
-							<td>@fat</td>
+							<td>Transfer Mandiri</td>
+							<td>K002</td>
+							<td>Ruangan Bebas Rokok</td>
+							<td>22/01/2021</td>
+							<td>Rp 450,000</td>
 						</tr>
 						<tr>
 							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
-						</tr>
-					</tbody>
-				</table>
-
-				<table class="table">
-					<thead class="thead-light">
-						<tr>
-							<th scope="col">#</th>
-							<th scope="col">First</th>
-							<th scope="col">Last</th>
-							<th scope="col">Handle</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>@mdo</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>@fat</td>
-						</tr>
-						<tr>
-							<th scope="row">3</th>
-							<td>Larry</td>
-							<td>the Bird</td>
-							<td>@twitter</td>
+							<td>PlK1023543</td>
+							<td>17/01/2021</td>
+							<td>Andrew</td>
+							<td>Transfer BCA</td>
+							<td>K002</td>
+							<td>Extra Bed, Ruangan Bebas Rokok</td>
+							<td>22/01/2021</td>
+							<td>Rp 500,000</td>
 						</tr>
 					</tbody>
 				</table>

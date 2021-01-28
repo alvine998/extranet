@@ -18,16 +18,16 @@ function preventDefault(event) {
     const classes = useStyles();
     return (
       <React.Fragment>
-        <Title>Recent Deposits</Title>
+        <Title>Pendapatan Anda</Title>
         <Typography component="p" variant="h4">
-          $3,024.00
+          Rp 4,550,000
         </Typography>
         <Typography color="textSecondary" className={classes.depositContext}>
-          on 15 March, 2019
+          27 Januari, 2021
         </Typography>
         <div>
           <Link color="primary" href="#" onClick={preventDefault}>
-            View balance
+            Lihat detail
           </Link>
         </div>
       </React.Fragment>
